@@ -122,7 +122,7 @@ if(navigator.geolocation){
   
       fetch(api)
       .then(response => {
-        response.json();
+        return response.json();
       })
       .then(data => {
         console.log(data);
