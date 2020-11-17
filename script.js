@@ -143,3 +143,12 @@ if(navigator.geolocation){
   });
 }
 
+function show(){
+  let display = document.querySelector('.owner-popup');
+  display.style.display = 'block';
+}
+
+function hide(){
+  let display = document.querySelector('.owner-popup');
+  display.style.display = 'none';
+}
