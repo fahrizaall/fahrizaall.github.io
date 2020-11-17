@@ -76,13 +76,29 @@
 
   </div>
 
-  <form method="get" action="https://www.google.com/search" target="_blank">
+  <!-- search -->
+  <form method="get" action="http://www.google.com/search" target="_blank">
     <input type="text" name="q" maxlength="255" placeholder="Search with Google" class="search"/>
   </form>
   
+  <!-- quotes -->
   <div class="quotes">
     <p>Problems are not stop signs, they are guidelines.</p>
     <span>– Robert H. Schiuller</span>
+  </div>
+
+  <!-- redirec -->
+  <div class="redirec-owner" onclick="show()">
+    <a class="owner" href="#">Website Owner <i class="fas fa-angle-right next"></i></a>
+  </div>
+
+  <!-- Popup Message -->
+  <div class="owner-popup">
+    <img class="popup-message" src="/imgs/Coming Soon.png" alt="">
+    <div class="close-btn" onclick="hide()">
+      <a><i class="fas fa-times"></i></a>
+    </div>
+    
   </div>
     
   <script src="script.js"></script>
