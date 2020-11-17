@@ -100,7 +100,7 @@ function clock(){
   document.querySelector('.clock').innerHTML = hours + ":" + minutes;
 }
 
-setInterval(clock(),1000);
+setInterval(clock,1000);
 
 
 
@@ -122,7 +122,7 @@ if(navigator.geolocation){
   
       fetch(api)
       .then(response => {
-        return response.json();
+        response.json();
       })
       .then(data => {
         console.log(data);
