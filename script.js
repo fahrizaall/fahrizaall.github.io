@@ -132,7 +132,7 @@ if(navigator.geolocation){
         // const {temp} = data.main;
         degree.textContent = Math.floor(data.main.temp);
         summary.textContent = data.weather[0].main;
-        // icon.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+        icon.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
       })
       .catch(err => {
         console.error(err);
