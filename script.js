@@ -87,6 +87,7 @@ renderCalendar();
 
 // ======= Clock =======
 function clock(){
+  let date = Date();
   let hours = date.getHours();
   let minutes = date.getMinutes();
 
@@ -117,8 +118,9 @@ if(navigator.geolocation){
 
     console.log(lon);
     // https://cors-anywhere.herokuapp.com/ to get API server in localhost 
+    let proxy = "https://cors-anywhere.herokuapp.com/";
 
-    let api = `api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${key}`;
+    let api = `${proxy}api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${key}`;
   
       fetch(api)
       .then(response => {
