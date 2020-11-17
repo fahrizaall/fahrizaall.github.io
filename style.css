@@ -243,7 +243,7 @@ Driftwood : #A98B4A */
 	left: 50rem;
 	background-color: rgba(0, 0, 0, 0);
 	border: none;
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid #854C27;
 }
 
 input:focus,
@@ -271,4 +271,55 @@ button:focus {
 	position: relative;
 	float: right;
 	color: rgb(107, 107, 107);
+}
+
+
+/* redirec website owner */
+.redirec-owner{
+	position: absolute;
+	right: 1rem;
+	bottom: 1rem;
+}
+
+.redirec-owner a{
+	display: flex;
+	align-items: center;
+}
+
+.owner{
+	font-family: 'Open Sans';
+	text-decoration: none;
+	font-size: 1.5rem;
+	color: rgb(107, 107, 107);
+	padding-bottom: .1rem;
+}
+
+.redirec-owner i{
+	position: relative;
+	padding-bottom: 0;
+	color:  rgb(107, 107, 107);
+}
+
+
+/* popup */
+.owner-popup{
+	position: absolute;
+	top: 13rem;
+	left: 30rem;
+	display: none;
+}
+
+.popup-message{
+	border-radius: 2rem;
+	width: 700px;
+	height: 350px;
+}
+
+.close-btn{
+	position: relative;
+	float: right;
+	right: 3.5rem;
+	top: 1rem;
+	font-size: 2.5rem;
+	color: white;
 }
