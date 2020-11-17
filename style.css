@@ -198,11 +198,77 @@ Driftwood : #A98B4A */
 }
 
 .box i{
-	padding: 1rem;
-	font-size: 3.5rem;
+	padding-left: 2rem;
+	font-size: 2.5rem;
 	color: white;
 }
 
-.bow a{
+.tag{
+	padding-left: 2rem;
+	color: white;
+	font-size: 1rem;
+}
+.tag-whatsapp{
+	padding-left: 0.5rem;
+}
+.tag-library{
+	padding-left: 1.5rem;
+}
+.tag-telegram{
+	padding-left: 0.8rem;
+}
+
+.box a{
+	padding-top: 0.5rem;
 	text-decoration: none;
+	display: flex;
+	align-items: center;
+}
+
+.box-icon{
+	display: inline;
+	vertical-align: text-bottom;
+	padding-left: 1rem;
+}
+
+
+/* Search */
+.search{
+	position: absolute;
+	font: 700;
+	font-size: 1.5rem;
+	width: 37rem;
+	height: 3rem;
+	top: 17rem;
+	left: 50rem;
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	border-bottom: 1px solid black;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
+/* Quotes */
+.quotes{
+	position: absolute;
+	font-weight: 600;
+	font-size: 1.1rem;
+	right: 25rem;
+	bottom: 30rem;
+	color: rgb(107, 107, 107);
+	padding: 0 .5rem 0.2rem 0;
+	border-right: 2px solid rgb(95, 95, 95);
+}
+
+.quotes span{
+	font-weight: 500;
+	position: relative;
+	float: right;
+	color: rgb(107, 107, 107);
 }
