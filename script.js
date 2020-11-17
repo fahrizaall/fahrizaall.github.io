@@ -140,4 +140,3 @@ if(navigator.geolocation){
   });
 }
 
-alert("Use PC or Laptop for better experience");
