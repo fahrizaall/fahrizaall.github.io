@@ -113,7 +113,7 @@ if(navigator.geolocation){
   navigator.geolocation.getCurrentPosition( position => {
     let lon = position.coords.longitude;
     let lat = position.coords.latitude;
-    let key = '2e3d094984df220bc4e94f59ea26128f';
+    let key = '186bcee11240bb8bcd1e9c20ce47fdc2';
 
     console.log(lon);
     // https://cors-anywhere.herokuapp.com/ to get API server in localhost 
