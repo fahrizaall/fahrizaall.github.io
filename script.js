@@ -87,7 +87,8 @@ renderCalendar();
 
 // ======= Clock =======
 function clock(){
-  let date = Date();
+  let date = new Date();
+  
   let hours = date.getHours();
   let minutes = date.getMinutes();
 
