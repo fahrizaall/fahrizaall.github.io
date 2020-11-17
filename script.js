@@ -1,3 +1,5 @@
+alert("Use PC or Laptop for better experience");
+
 const date = new Date();
 
 const renderCalendar = () => {
