@@ -419,7 +419,7 @@ button:focus {
       .weather-container {
         position: absolute;
         top: 1rem;
-        left: 1rem;
+        left: -3vh;
         justify-self: center;
         align-self: center;
         -webkit-transform: scale(1);
