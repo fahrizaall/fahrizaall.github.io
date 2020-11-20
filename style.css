@@ -412,7 +412,7 @@ button:focus {
       .clock {
         position: absolute;
         top: 55rem;
-        left: 12rem;
+        left: 10rem;
         font-size: 5rem;
       }
 
@@ -438,7 +438,7 @@ button:focus {
 	    
       .toolbox {
         position: absolute;
-        left: 2rem;
+        left: 1rem;
       }
     }
   }
