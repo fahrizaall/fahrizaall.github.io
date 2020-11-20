@@ -1,8 +1,7 @@
 const date = new Date();
 
 const renderCalendar = () => {
-
-date.setDate(1);
+  date.setDate(1);
 
   const monthDays = document.querySelector(".days");
 
@@ -62,13 +61,12 @@ date.setDate(1);
     }
   }
 
-  if(nextDays>0){
+  if (nextDays > 0) {
     for (let j = 1; j <= nextDays; j++) {
       days += `<div class="next-date">${j}</div>`;
       monthDays.innerHTML = days;
     }
   } else monthDays.innerHTML = days;
-  
 };
 
 document.querySelector(".prev").addEventListener("click", () => {
@@ -83,82 +81,67 @@ document.querySelector(".next").addEventListener("click", () => {
 
 renderCalendar();
 
-
-
 // ======= Clock =======
-function clock(){
+function clock() {
   let date = new Date();
-  
   let hours = date.getHours();
   let minutes = date.getMinutes();
 
-  if(hours<10){
+  if (hours < 10) {
     hours = ("0" + hours).slice(-2);
   }
-  if(minutes<10){
+  if (minutes < 10) {
     minutes = ("0" + minutes).slice(-2);
   }
 
-  document.querySelector('.clock').innerHTML = hours + ":" + minutes;
+  document.querySelector(".clock").innerHTML = hours + ":" + minutes;
 }
 
-setInterval(clock,1000);
-
-
+clock();
+setInterval(function () {
+  clock();
+}, 60000);
 
 // ======= Weather =======
-let degree = document.querySelector('.degree');
-let summary = document.querySelector('.summary');
-let icon = document.querySelector('.weather-icon');
+let degree = document.querySelector(".degree");
+let summary = document.querySelector(".summary");
+let icon = document.querySelector(".weather-icon");
 
-if(navigator.geolocation){
-  navigator.geolocation.getCurrentPosition( position => {
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition((position) => {
     let lon = position.coords.longitude;
     let lat = position.coords.latitude;
-    let key = '186bcee11240bb8bcd1e9c20ce47fdc2';
+    let key = "2e3d094984df220bc4e94f59ea26128f";
 
     console.log(lon);
-    // https://cors-anywhere.herokuapp.com/ to get API server in localhost 
+    // https://cors-anywhere.herokuapp.com/ to get API server in localhost
     let proxy = "https://cors-anywhere.herokuapp.com/";
 
     let api = `${proxy}api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${key}`;
-  
-      fetch(api)
-      .then(response => {
+
+    fetch(api)
+      .then((response) => {
         return response.json();
       })
-      .then(data => {
+      .then((data) => {
         console.log(data);
         // const {temp} = data.main;
         degree.textContent = Math.floor(data.main.temp);
         summary.textContent = data.weather[0].main;
         icon.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
       })
-      .catch(err => {
+      .catch((err) => {
         console.error(err);
       });
-
-
-    
   });
 }
 
-function show(){
-  let display = document.querySelector('.owner-popup');
-  display.style.display = 'block';
+function show() {
+  let display = document.querySelector(".owner-popup");
+  display.style.display = "block";
 }
 
-function hide(){
-  let display = document.querySelector('.owner-popup');
-  display.style.display = 'none';
-}
-
-
-window.onload=function(){
-  var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
-  if (mobile) {
-      alert("Visit this on a pc/laptop for better view");              
-  } else {
-
-  }
+function hide() {
+  let display = document.querySelector(".owner-popup");
+  display.style.display = "none";
 }
