@@ -367,7 +367,7 @@ button:focus {
 
     .clock {
       position: absolute;
-      top: 15rem;
+      top: 20vh;
       right: 35vh;
     }
 
@@ -411,7 +411,7 @@ button:focus {
 
       .clock {
         position: absolute;
-        top: 55rem;
+        top: 95vh;
         left: 9rem;
         font-size: 5rem;
       }
