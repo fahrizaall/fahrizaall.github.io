@@ -412,14 +412,14 @@ button:focus {
       .clock {
         position: absolute;
         top: 61rem;
-        left: 9rem;
+        left: 8.5rem;
         font-size: 5rem;
       }
 
       .weather-container {
         position: absolute;
         top: 1rem;
-        left: -3vh;
+        left: -4vh;
         justify-self: center;
         align-self: center;
         -webkit-transform: scale(1);
