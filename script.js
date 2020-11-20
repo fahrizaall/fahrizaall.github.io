@@ -117,7 +117,7 @@ if (navigator.geolocation) {
     // https://cors-anywhere.herokuapp.com/ to get API server in localhost
     let proxy = "https://cors-anywhere.herokuapp.com/";
 
-    let api = `${proxy}api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${key}`;
+    let api = `${proxy}https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${key}`;
 
     fetch(api)
       .then((response) => {
@@ -128,7 +128,7 @@ if (navigator.geolocation) {
         // const {temp} = data.main;
         degree.textContent = Math.floor(data.main.temp);
         summary.textContent = data.weather[0].main;
-        icon.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+        icon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
       })
       .catch((err) => {
         console.error(err);
