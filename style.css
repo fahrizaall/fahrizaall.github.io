@@ -367,7 +367,7 @@ button:focus {
 
     .clock {
       position: absolute;
-      top: 20vh;
+      top: 15rem;
       right: 35vh;
     }
 
@@ -411,15 +411,15 @@ button:focus {
 
       .clock {
         position: absolute;
-        top: 61rem;
-        left: 8.5rem;
+        top: 55rem;
+        left: 9rem;
         font-size: 5rem;
       }
 
       .weather-container {
         position: absolute;
         top: 1rem;
-        left: -4vh;
+        left: 1rem;
         justify-self: center;
         align-self: center;
         -webkit-transform: scale(1);
@@ -434,6 +434,12 @@ button:focus {
 
       .weather {
         background-color: transparent;
+      }
+
+      .degree,
+      .deg-unit,
+      .summary {
+        color: rgb(107, 107, 107);
       }
 
       .toolbox {
